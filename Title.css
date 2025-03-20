@@ -1,0 +1,104 @@
+
+body {
+  background-color: rgb(32, 32, 32);
+  color: azure;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  color: navy;
+  font-size: 60px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.tagline {
+  font-size: 20px;
+  color: navy;
+}
+
+.about-section {
+  padding: 20px;
+}
+
+.aboutus {
+  font-size: 50px;
+  text-decoration: underline;
+  color: bisque;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.collage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.collage img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.collage img:hover {
+  transform: scale(1.1);
+}
+
+.circle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: pink;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  transition: opacity 0.3s;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#claimBtn {
+  background-color: #ff5733;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 20px;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+#claimBtn:hover {
+  background-color: #ff2e00;
+}

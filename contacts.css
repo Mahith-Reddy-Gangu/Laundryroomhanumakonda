@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2C3E50;
+  background-image: url(https://media.istockphoto.com/id/470450361/photo/row-of-clothes-dryers-laundromat.jpg?s=612x612&w=0&k=20&c=ZqLE2DqpwoAAN-Lo_hQm_mFnNBrvpKsOo3cm0A3S5H8=);
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  background-color: #ff8c00;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #444;
+  color: #fff;
+}
+
+td a {
+  color: #ff8c00;
+  text-decoration: none;
+  font-weight: bold;
+  transition: text-decoration 0.3s;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+.bg-phone,
+.bg-instagram,
+.bg-facebook,
+.bg-twitter,
+.bg-email {
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 60px;
+}
+
+.bg-phone { 
+  background-image: url('https://cdn-icons-png.flaticon.com/512/724/724664.png'); 
+}
+.bg-instagram { 
+  background-image: url('https://cdn-icons-png.flaticon.com/512/2111/2111463.png'); 
+}
+.bg-facebook { 
+  background-image: url('https://cdn-icons-png.flaticon.com/512/733/733547.png'); 
+}
+.bg-twitter { 
+  background-image: url('https://cdn-icons-png.flaticon.com/512/733/733579.png'); 
+}
+.bg-email { 
+  background-image: url('https://cdn-icons-png.flaticon.com/512/732/732200.png'); 
+}

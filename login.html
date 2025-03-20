@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - Laundry Room</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="title.html">Home</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html" class="active">Login</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="findus.html">Find Us</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="container-login">
+      <form id="loginform">
+        <h2>Login to Laundry Room</h2>
+        <table>
+          <tr>
+            <td><input type="button" value="Enter using mail" id="mailLogin"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="Enter using phone number" id="phoneLogin"></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="account" placeholder="Enter Laundry Room Account"></td>
+          </tr>
+          <tr>
+            <td><input type="password" id="password" placeholder="Password"></td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">Don't have an account? <a href="register.html">Sign Up here</a></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="Clear Everything" id="clearBtn"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </main>
+  
+  <script src="login.js"></script>
+</body>
+</html>

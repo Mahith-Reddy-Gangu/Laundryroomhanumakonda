@@ -1,0 +1,101 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: peachpuff;
+  background-image: url(https://cdn.pixabay.com/photo/2019/12/15/04/58/shirts-4696379_640.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  background: rgba(255,255,255,0.95);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  background-color: azure;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+table {
+  margin: auto;
+  width: 90%;
+  border-collapse: collapse;
+  background: peachpuff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #007BFF;
+  color: #fff;
+}
+
+.add-btn, .remove-btn, .checkout-btn {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-btn {
+  background-color: #28A745;
+  color: #fff;
+  padding: 8px 12px;
+}
+
+.add-btn:hover {
+  background-color: #218838;
+}
+
+.remove-btn {
+  background-color: #DC3545;
+  color: #fff;
+  padding: 8px 12px;
+}
+
+.remove-btn:hover {
+  background-color: #C82333;
+}
+
+.checkout-btn {
+  background-color: #FFA500;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.checkout-btn:hover {
+  background-color: #FF8C00;
+}
+.clear-btn {
+  background-color: #6C757D;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background-color: #5A6268;
+}

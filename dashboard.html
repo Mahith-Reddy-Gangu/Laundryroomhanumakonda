@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customer Dashboard - Laundry Room</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="title.html">Home</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="findus.html">Find Us</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="dashboard-container">
+    <aside class="sidebar">
+      <nav>
+        <br>
+        <br>
+        <ul>
+          <br>
+          <h2>Dashboard</h2>
+          <li><a href="#order-history" class="active">Order History</a></li>
+          <li><a href="#subscriptions">Subscriptions</a></li>
+          <li><a href="#addresses">Saved Addresses</a></li>
+          <li><a href="#payments">Payment Methods</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <section class="content">
+      <section id="order-history">
+        <h2>Order History</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#1001</td>
+              <td>2025-01-15</td>
+              <td>Completed</td>
+              <td>Rs 500</td>
+            </tr>
+            <tr>
+              <td>#1002</td>
+              <td>2025-02-10</td>
+              <td>In Process</td>
+              <td>Rs 750</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="subscriptions">
+        <br>
+        <h2>Subscriptions</h2>
+        <br>
+        <p>You are currently not subscribed to any monthly plans.</p><br>
+        <button class="btn">Subscribe Now</button>
+      </section>
+      <section id="addresses">
+        <h2>Saved Addresses</h2>
+        <ul>
+          <br>
+          <li> National Institute of Technology Campus, Hanamkonda, Telangana 506004, India <button class="btn-small">Edit</button></li><br>
+          <li>Kazipet is 506001, India <button class="btn-small">Edit</button></li>
+        </ul>
+      </section>
+      <section id="payments">
+        <h2>Payment Methods</h2>
+        <ul>
+          <br>
+          <li>Visa **** 1234 <button class="btn-small">Edit</button></li><br>
+          <li>Mastercard **** 5678 <button class="btn-small">Edit</button></li><br>
+        </ul>
+      </section>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Laundry Room. All rights reserved.</p>
+  </footer>
+</body>
+</html>

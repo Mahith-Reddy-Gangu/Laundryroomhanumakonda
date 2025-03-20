@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laundry Services - Laundry Room</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="services.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="title.html">Home</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="findus.html">Find Us</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h1>Our Laundry Services</h1>
+    <table>
+      <tr>
+        <th>Package</th>
+        <th>Washes</th>
+        <th>Weight Limit</th>
+        <th>Cost per kg</th>
+        <th>Add</th>
+        <th>Remove</th>
+      </tr>
+      <tr>
+        <td>1000Rs Package</td>
+        <td>Up to 4 washes</td>
+        <td>Up to 10kg</td>
+        <td>Rs 65/kg</td>
+        <td><button class="add-btn" onclick="addPackage(1000, 65, '1000Rs')">Add</button></td>
+        <td><button class="remove-btn" onclick="removePackage('1000Rs')">Remove</button></td>
+      </tr>
+      <tr>
+        <td>1500Rs Package</td>
+        <td>Up to 8 washes</td>
+        <td>Up to 20kg</td>
+        <td>Rs 60/kg</td>
+        <td><button class="add-btn" onclick="addPackage(1500, 60, '1500Rs')">Add</button></td>
+        <td><button class="remove-btn" onclick="removePackage('1500Rs')">Remove</button></td>
+      </tr>
+      <tr>
+        <td>2000Rs Package</td>
+        <td>Up to 16 washes</td>
+        <td>Up to 30kg</td>
+        <td>Rs 55/kg</td>
+        <td><button class="add-btn" onclick="addPackage(2000, 55, '2000Rs')">Add</button></td>
+        <td><button class="remove-btn" onclick="removePackage('2000Rs')">Remove</button></td>
+      </tr>
+      <tr>
+        <td>Custom Weight (No Package)</td>
+        <td>-</td>
+        <td>
+          <input type="number" id="customWeight" min="1" max="100" value="1"> kg
+        </td>
+        <td>Rs 70/kg</td>
+        <td><button class="add-btn" onclick="addCustomWeight()">Add</button></td>
+        <td><button class="remove-btn" onclick="removeCustomWeight()">Remove</button></td>
+      </tr>
+      <tr>
+        <td>NITW Student Discount</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-Rs 100</td>
+        <td><button class="add-btn" onclick="applyDiscount('nitw')">Apply</button></td>
+        <td><button class="remove-btn" onclick="removeDiscount('nitw')">Remove</button></td>
+      </tr>
+      <tr>
+        <td>NCC Membership Discount</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-Rs 150</td>
+        <td><button class="add-btn" onclick="applyDiscount('ncc')">Apply</button></td>
+        <td><button class="remove-btn" onclick="removeDiscount('ncc')">Remove</button></td>
+      </tr>
+      <tr>
+        <td>Laundry Bag</td>
+        <td>-</td>
+        <td>1 bag</td>
+        <td>Rs 50</td>
+        <td><button class="add-btn" onclick="addItem('bag', 50)">Add</button></td>
+        <td><button class="remove-btn" onclick="removeItem('bag')">Remove</button></td>
+      </tr>
+      <tr>
+        <td colspan="4"><strong>Total Cost:</strong></td>
+        <td colspan="2" id="totalCost">Rs 0</td>
+      </tr>
+    </table>
+    <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+    <button class="clear-btn" onclick="clearAll()">Clear</button>
+  </main>
+  
+  <script src="services.js"></script>
+</body>
+</html>
